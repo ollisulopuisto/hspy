@@ -1,0 +1,49 @@
+name: Convert Markdown files
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Pandoc and LaTex
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+        sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-lang-european texlive-xetex texlive-luatex
+        echo '\usepackage[utf8]{inputenc}' >> header.tex
+        echo '\usepackage[T1]{fontenc}' >> header.tex
+    - name: Convert
+      run: |
+        HEADER="HSPY:n ajantasaiset ohjeet"
+        mkdir -p output/html output/pdf
+        # take a snapshot of all files in the output directory
+        find output -type f > old_files
+        echo "<html><head><title>$HEADER</title></head><body><h1>$HEADER</h1><ul>" > output/index.html
+        for file in source/*.md
+        do
+          base_file_name="${file%.*}"
+          base_file_name="${base_file_name#*/}"
+          pandoc "$file" --include-in-header=header.tex --pdf-engine=xelatex -o "output/html/$base_file_name.html"
+          pandoc "$file" --include-in-header=header.tex --pdf-engine=xelatex -o "output/pdf/$base_file_name.pdf"
+          title=$(head -n 1 "$file" | sed 's/# //')
+          echo "<li><a href='html/$base_file_name.html'>$title</a> <a href='pdf/$base_file_name.pdf'>(pdf)</a></li>" >> output/index.html
+        done
+        # TZ="Europe/Helsinki" sets the timezone to Helsinki.
+        MOD_DATE=$(TZ="Europe/Helsinki" date +"%d.%m.%Y %H:%M:%S")
+        echo "</ul><footer>Muokattu: $MOD_DATE</footer></body></html>" >> output/index.html
+        # take another snapshot of all files in the output directory
+        find output -type f > new_files
+        # find any files in old_files not in new_files and delete them
+        comm -23 <(sort old_files) <(sort new_files) | xargs rm -f
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add output/*
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
