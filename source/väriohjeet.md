@@ -2,12 +2,9 @@
 
 ## YLEISTÄ VÄRIKARTASTA
 
-Herttoniemen siirtolapuutarha-alueelle laaditun värikartan tarkoituk-
-sena on taata alueelle yhtenäinen, rakennusten tyyliin ja historiaan
+Herttoniemen siirtolapuutarha-alueelle laaditun värikartan tarkoituksena on taata alueelle yhtenäinen, rakennusten tyyliin ja historiaan
 soveltuva värimaailma. Värikartan laatimisen lähtökohtana on käytetty
-Herttoniemen siirtolapuutarha-alueella tehtyä väritystutkimusta (Osuus-
-kunta Kollaasi 2021). Värikartta toimii ohjeena mökin värityksen suunnit-
-telussa, kun mökin maalaaminen tulee ajankohtaiseksi. Värikartta astuu
+Herttoniemen siirtolapuutarha-alueella tehtyä väritystutkimusta (Osuuskunta Kollaasi 2021). Värikartta toimii ohjeena mökin värityksen suunnittelussa, kun mökin maalaaminen tulee ajankohtaiseksi. Värikartta astuu
 voimaan keväällä 2022 ja siirtolapuutarhamökeissä saa sen jälkeen
 käyttää ainoastaan tässä ohjeessa esitettyjä värisävyjä. Tavoitteena
 on, että kaikkien mökkien värit saatetaan tämän ohjeen mukaisiksi
@@ -33,23 +30,22 @@ Seinät ovat mökin isoin väripinta ja seinävärin valinta onkin yleensä
 maalaustöiden suunnittelun lähtökohta.
 
 **IKKUNAT JA SEINIEN VUORI- JA OTSALAUDAT**
+
 Vaaleilla ikkunoiden ja vuori- ja otsalautojen väreillä voidaan korostaa
 näitä rakennusosia ja nostaa niitä esiin seinäpinnasta. Osassa mökeistä
 ei ole erillisiä nurkkien vuorilautoja.
 
 **OVIVÄRIT**
+
 Ovissa voidaan haluttaessa käyttää tummempia ovisävyjä tai samoja
 värejä kuin ikkunoissa, vuori- ja otsalaudoissa.
 
 **KOROSTUSVÄRIT**
-Sekä väritystutkimuksessa, että arkistokuvien perusteella voidaan ha-
-vaita, että osassa mökeistä ikkunat ovat olleet maalattuna kaksivärisiksi
+Sekä väritystutkimuksessa, että arkistokuvien perusteella voidaan havaita, että osassa mökeistä ikkunat ovat olleet maalattuna kaksivärisiksi
 niin, että muuten vaaleaksi maalatussa ikkunassa joko ikkunanpuitteet
 tai vuorilaudat ovat olleet maalattuna tummemmalla korostussävyllä.
 Myös alkuperäisten kalanruotolaudoitettujen ovien lautojen rakoja on
-osassa mökeistä korostettu tummemmalla sävyllä. Korostusvärien käyt-
-tö ei ole välttämätöntä, vaan ikkunat ja ovet voi myös maalata yksivä-
-risiksi ikkunat, vuori- ja otsalaudat kohdassa esitetyillä vaaleilla sävyillä.
+osassa mökeistä korostettu tummemmalla sävyllä. Korostusvärien käyttö ei ole välttämätöntä, vaan ikkunat ja ovet voi myös maalata yksivärisiksi ikkunat, vuori- ja otsalaudat kohdassa esitetyillä vaaleilla sävyillä.
 
 ## Herttoniemen siirtolapuutarha
 
@@ -68,9 +64,7 @@ Kalanruotolaudoitettu ovi
 
 ```
 *Punamultasävyjen NCS mallit ja koodit
-ovat suuntaa antavia. Suositellaan käytet-
-täväksi punamullalla sävytettyjä keittomaa-
-leja konesävytteisten sijaan
+ovat suuntaa antavia. Suositellaan käytettäväksi punamullalla sävytettyjä keittomaaleja konesävytteisten sijaan
 ```
 ## SEINÄVÄRIT
 
