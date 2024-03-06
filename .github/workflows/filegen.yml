@@ -33,7 +33,10 @@ jobs:
         # find any new files in the output directory
         find output -type f > new_files
         # find any files in old_files not in new_files and delete them
-        comm -23 <(sort old_files) <(sort new_files) | xargs rm
+        files_to_remove=$(comm -23 <(sort old_files) <(sort new_files))
+        if [ -n "$files_to_remove" ]; then
+            echo "$files_to_remove" | xargs rm
+        fi
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
