@@ -41,7 +41,7 @@ Ovissa voidaan haluttaessa käyttää tummempia ovisävyjä tai samoja
 värejä kuin ikkunoissa, vuori- ja otsalaudoissa.
 
 **KOROSTUSVÄRIT**
-Sekä väritystutkimuksessa, että arkistokuvien perusteella voidaan havaita, että osassa mökeistä ikkunat ovat olleet maalattuna kaksivärisiksi
+Sekä väritystutkimuksessa että arkistokuvien perusteella voidaan havaita, että osassa mökeistä ikkunat ovat olleet maalattuna kaksivärisiksi
 niin, että muuten vaaleaksi maalatussa ikkunassa joko ikkunanpuitteet
 tai vuorilaudat ovat olleet maalattuna tummemmalla korostussävyllä.
 Myös alkuperäisten kalanruotolaudoitettujen ovien lautojen rakoja on
