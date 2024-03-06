@@ -25,8 +25,9 @@ jobs:
         do
           base_file_name="${file%.*}"
           base_file_name="${base_file_name#*/}"
-          pandoc "$file" --include-in-header=header.tex -o "output/html/$base_file_name.html"
-          pandoc "$file" --pdf-engine=xelatex -o "output/pdf/$base_file_name.pdf"
+          DATE=$(date)
+          pandoc -s -o "output/html/$base_file_name.html" -V date="$DATE" "$file"
+          pandoc --pdf-engine=xelatex -V date="$DATE" -o "output/pdf/$base_file_name.pdf" "$file"
           echo "<li><a href='html/$base_file_name.html'>$title</a> <a href='pdf/$base_file_name.pdf'>(pdf)</a></li>" >> output/index.html
         done
         echo "</ul><footer></footer></body></html>" >> output/index.html
