@@ -6,29 +6,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>väriohjeet</title>
   <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
-<h1 id="värikartta-herttoniemen-siirtolapuutarha">Värikartta, Herttoniemen siirtolapuutarha</h1>
+<h1 id="värikartta-herttoniemen-siirtolapuutarha">Värikartta,
+Herttoniemen siirtolapuutarha</h1>
 <h2 id="yleistä-värikartasta">YLEISTÄ VÄRIKARTASTA</h2>
-<p>Herttoniemen siirtolapuutarha-alueelle laaditun värikartan tarkoituksena on taata alueelle yhtenäinen, rakennusten tyyliin ja historiaan soveltuva värimaailma. Värikartan laatimisen lähtökohtana on käytetty Herttoniemen siirtolapuutarha-alueella tehtyä väritystutkimusta (Osuuskunta Kollaasi 2021). Värikartta toimii ohjeena mökin värityksen suunnittelussa, kun mökin maalaaminen tulee ajankohtaiseksi. Värikartta astuu voimaan keväällä 2022 ja siirtolapuutarhamökeissä saa sen jälkeen käyttää ainoastaan tässä ohjeessa esitettyjä värisävyjä. Tavoitteena on, että kaikkien mökkien värit saatetaan tämän ohjeen mukaisiksi kymmenen vuoden kuluessa ohjeen hyväksymisestä.</p>
-<p>Valitut värit on esitetty Natural Colour System® (NCS) sävykoodein. NCS on tällä hetkellä maailmanlaajuisesti levinnein värijärjestelmä ja se on maalinvalmistajista riippumaton. Näin ollen esitetyt värikoodit ovat pysyviä, eivätkä vaihdu väritrendien tai kaupallisten värikarttojen muutosten mukana. Lähes kaikkien maalinvalmistajien tuotteet ovat sävytettävissä NCS värikoodien mukaan.</p>
-<p>Maalaustöissä suositellaan käytettäväksi perinteisiä maalityyppejä, kuten öljy- tai keittomaalia, mikäli mahdollista. Värikartassa esitetyt värit eivät välttämättä toistu luonnollisina näytöllä tai tulosteessa. Lopulliset värivalinnat tulisi aina tehdä maalattujen mallien perusteella. HSPY on teettänyt värimallit kaikista kartan väreistä ja ne ovat lainattavissa suunnittelua varten.</p>
+<p>Herttoniemen siirtolapuutarha-alueelle laaditun värikartan
+tarkoituksena on taata alueelle yhtenäinen, rakennusten tyyliin ja
+historiaan soveltuva värimaailma. Värikartan laatimisen lähtökohtana on
+käytetty Herttoniemen siirtolapuutarha-alueella tehtyä väritystutkimusta
+(Osuuskunta Kollaasi 2021). Värikartta toimii ohjeena mökin värityksen
+suunnittelussa, kun mökin maalaaminen tulee ajankohtaiseksi. Värikartta
+astuu voimaan keväällä 2022 ja siirtolapuutarhamökeissä saa sen jälkeen
+käyttää ainoastaan tässä ohjeessa esitettyjä värisävyjä. Tavoitteena on,
+että kaikkien mökkien värit saatetaan tämän ohjeen mukaisiksi kymmenen
+vuoden kuluessa ohjeen hyväksymisestä.</p>
+<p>Valitut värit on esitetty Natural Colour System® (NCS) sävykoodein.
+NCS on tällä hetkellä maailmanlaajuisesti levinnein värijärjestelmä ja
+se on maalinvalmistajista riippumaton. Näin ollen esitetyt värikoodit
+ovat pysyviä, eivätkä vaihdu väritrendien tai kaupallisten värikarttojen
+muutosten mukana. Lähes kaikkien maalinvalmistajien tuotteet ovat
+sävytettävissä NCS värikoodien mukaan.</p>
+<p>Maalaustöissä suositellaan käytettäväksi perinteisiä maalityyppejä,
+kuten öljy- tai keittomaalia, mikäli mahdollista. Värikartassa esitetyt
+värit eivät välttämättä toistu luonnollisina näytöllä tai tulosteessa.
+Lopulliset värivalinnat tulisi aina tehdä maalattujen mallien
+perusteella. HSPY on teettänyt värimallit kaikista kartan väreistä ja ne
+ovat lainattavissa suunnittelua varten.</p>
 <h3 id="seinävärit">SEINÄVÄRIT</h3>
-<p>Seinät ovat mökin isoin väripinta ja seinävärin valinta onkin yleensä maalaustöiden suunnittelun lähtökohta.</p>
+<p>Seinät ovat mökin isoin väripinta ja seinävärin valinta onkin yleensä
+maalaustöiden suunnittelun lähtökohta.</p>
 <p><strong>IKKUNAT JA SEINIEN VUORI- JA OTSALAUDAT</strong></p>
-<p>Vaaleilla ikkunoiden ja vuori- ja otsalautojen väreillä voidaan korostaa näitä rakennusosia ja nostaa niitä esiin seinäpinnasta. Osassa mökeistä ei ole erillisiä nurkkien vuorilautoja.</p>
+<p>Vaaleilla ikkunoiden ja vuori- ja otsalautojen väreillä voidaan
+korostaa näitä rakennusosia ja nostaa niitä esiin seinäpinnasta. Osassa
+mökeistä ei ole erillisiä nurkkien vuorilautoja.</p>
 <p><strong>OVIVÄRIT</strong></p>
-<p>Ovissa voidaan haluttaessa käyttää tummempia ovisävyjä tai samoja värejä kuin ikkunoissa, vuori- ja otsalaudoissa.</p>
+<p>Ovissa voidaan haluttaessa käyttää tummempia ovisävyjä tai samoja
+värejä kuin ikkunoissa, vuori- ja otsalaudoissa.</p>
 <p><strong>KOROSTUSVÄRIT</strong></p>
-<p>Sekä väritystutkimuksessa että arkistokuvien perusteella voidaan havaita, että osassa mökeistä ikkunat ovat olleet maalattuna kaksivärisiksi niin, että muuten vaaleaksi maalatussa ikkunassa joko ikkunanpuitteet tai vuorilaudat ovat olleet maalattuna tummemmalla korostussävyllä. Myös alkuperäisten kalanruotolaudoitettujen ovien lautojen rakoja on osassa mökeistä korostettu tummemmalla sävyllä. Korostusvärien käyttö ei ole välttämätöntä, vaan ikkunat ja ovet voi myös maalata yksivärisiksi ikkunat, vuori- ja otsalaudat kohdassa esitetyillä vaaleilla sävyillä.</p>
-<h2 id="herttoniemen-siirtolapuutarha">Herttoniemen siirtolapuutarha</h2>
+<p>Sekä väritystutkimuksessa että arkistokuvien perusteella voidaan
+havaita, että osassa mökeistä ikkunat ovat olleet maalattuna
+kaksivärisiksi niin, että muuten vaaleaksi maalatussa ikkunassa joko
+ikkunanpuitteet tai vuorilaudat ovat olleet maalattuna tummemmalla
+korostussävyllä. Myös alkuperäisten kalanruotolaudoitettujen ovien
+lautojen rakoja on osassa mökeistä korostettu tummemmalla sävyllä.
+Korostusvärien käyttö ei ole välttämätöntä, vaan ikkunat ja ovet voi
+myös maalata yksivärisiksi ikkunat, vuori- ja otsalaudat kohdassa
+esitetyillä vaaleilla sävyillä.</p>
+<h2 id="herttoniemen-siirtolapuutarha">Herttoniemen
+siirtolapuutarha</h2>
 <pre><code>Vuorilauta</code></pre>
 <pre><code>Karmi</code></pre>
 <pre><code>Puite</code></pre>
@@ -47,10 +230,12 @@ ovat suuntaa antavia. Suositellaan käytettäväksi punamullalla sävytettyjä k
 <pre><code>Tumma sininen NCS S 7020-R80B</code></pre>
 <pre><code>Punaruskea NCS S 6030-Y50R</code></pre>
 <pre><code>Punainen NCS S 4550-Y70R</code></pre>
-<h2 id="ikkunat-ja-vuori--ja-otsalaudat-sekä-ovet">IKKUNAT JA VUORI- JA OTSALAUDAT (SEKÄ OVET)</h2>
+<h2 id="ikkunat-ja-vuori--ja-otsalaudat-sekä-ovet">IKKUNAT JA VUORI- JA
+OTSALAUDAT (SEKÄ OVET)</h2>
 <p>Umbranharmaa NCS S 3005-Y20R</p>
 <p>Taitettu valkoinen NCS S 1000-N</p>
-<h2 id="herttoniemen-siirtolapuutarha-1">Herttoniemen siirtolapuutarha</h2>
+<h2 id="herttoniemen-siirtolapuutarha-1">Herttoniemen
+siirtolapuutarha</h2>
 <pre><code>Vaaleanpunainen NCS S 1515-Y60R</code></pre>
 <pre><code>Kellanvihreä NCS S 2020-G80Y</code></pre>
 <p>Kitti NCS S 1505-Y40R Okra NCS S 3030-Y30R</p>
@@ -61,7 +246,8 @@ ovat suuntaa antavia. Suositellaan käytettäväksi punamullalla sävytettyjä k
 <p>Vaaleanruskea NCS S 2010-Y30R</p>
 <pre><code>Harmaanruskea NCS S 4005-Y50R</code></pre>
 <pre><code>Harmaanvihreä NCS S 6010-G30Y</code></pre>
-<h2 id="herttoniemen-siirtolapuutarha-2">Herttoniemen siirtolapuutarha</h2>
+<h2 id="herttoniemen-siirtolapuutarha-2">Herttoniemen
+siirtolapuutarha</h2>
 <h3 id="mallimökki-1">MALLIMÖKKI 1</h3>
 <h3 id="seinät">SEINÄT</h3>
 <p>Keltainen NCS S 2050-Y20R</p>
